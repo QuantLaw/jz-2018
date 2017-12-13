@@ -27,6 +27,7 @@ Das hier zum Download bereitgestellte Archiv hat folgende Struktur:
   - `convert_to_txt.ipynb`, `split_txt.ipynb` und `create_db.ipynb` zur Vorverarbeitung der Entscheidungsdaten
   - `prepare_venn.ipynb` zur Vorbereitung von Abbildung 1
   - `search_db.ipynb` als Grundlage von Abbildung 2 und Abbildung 3
+  - PDF-Versionen aller vorgenannten Dateien
 
 Der zur Analyse verwendete Code basiert auf der Anaconda-Distribution von Python 3.6
 mit (Jupyter) Notebook 5.1.0, soweit in den einzelnen Dateien nichts anderes vermerkt ist. 
