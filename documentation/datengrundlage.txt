@@ -1,0 +1,76 @@
+Datengrundlage
+--------------
+
+BGH Versand
+-----------
+
+Rohdaten:  1878 Word-Dateien und 530 PDF-Dateien mit Aktenzeichen im Dateinamen,
+           zur Verfuegung gestellt durch den BGH
+
+Abdeckung: Einrichtung des XI. Zivilsenats 1988 - Ende 2015, 
+           ausserdem vereinzelte Entscheidungen aus 2016
+
+Vorgehen zur Aktenzeichenextraktion:
+    1. Herausfilterung der Dateien, die Entscheidungen von 2016 enthalten, mithilfe eines 
+       Python-Skripts auf Basis des jeweils ersten Datums im Entscheidungstext
+    2. Auslesen der Aktenzeichen aus den Dateinamen mithilfe eines Python-Skripts
+
+Moegliche Fehlerquellen: 
+    - Fehler bei der Dateifilterung, da in manchen Entscheidungen das erstgenannte Datum
+      nicht das Entscheidungsdatum ist
+    - Unrichtige Benennung der vom BGH erhaltenen Dateien
+    - Programmierfehler in den Python-Skripts
+
+Anmerkungen zur Datenaufbereitung fuer die automatisierte Weiterverarbeitung
+(u.a. erforderlich fuer die Volltextsuche):
+    - Die 1878 Word-Dateien wurden mithilfe der macOS Command Line Utility textutil in 
+      TXT-Dateien konvertiert. 
+      Das verwendete Programm hat Probleme mit Textmarken und Fusszeilen und fuegt an manchen 
+      Stellen (eindeutig als solche erkennbare) Textbausteine in den erkannten Text ein.
+    - Die 530 PDF-Dateien hatten noch kein Texterkennungsverfahren durchlaufen. 
+      Um auf den Text dieser Dateien zugreifen zu koennen, haben wir zunaechst die Texterkennung
+      mit Adobe Acrobat XI (Version 11.0.18) durchgefuehrt und die resultierenden PDF-Dateien
+      mit einem aelteren Windows-Tool (Some PDF to Txt Converter, Version 2.0.0.0) in TXT-Dateien
+      umgewandelt. 
+      Hierbei blieben 89 Dateien, in denen nichts oder fast nichts erkannt wurde.
+      Wir haben daher die verbliebenen Dateien mit PDF-XChange Editor Plus (Version 6.0) 
+      zunaechst in Word-Dateien konvertiert, diese wieder als PDFs gespeichert, dann die 
+      Texterkennung mit PDF-XChange durchgefuehrt und schliesslich die resultierenden PDFs
+      aus dem Programm heraus als TXT-Dateien gespeichert. 
+      Hierbei blieben zwei Dateien, bei denen nichts oder fast nichts erkannt wurde; warum 
+      das 'Verfahren' bei den anderen 87 Dateien funktioniert hat, koennen wir nicht erklaeren.
+      Auch die Dateien, bei denen Text erkannt wurde, haben oft mehrere Fehler pro Seite
+      (beispielsweise wurden die Ziffer 1 und der Buchstaben l oft verwechselt).
+
+
+BGH Internet
+------------
+
+Rohdaten:  HTML-Dateien von Suchergebnissen in der Entscheidungsdatenbank des BGH
+
+Abdeckung: Beginn des BGH-Digitalangebots 2000 - Ende 2015
+
+Vorgehen zur Aktenzeichenextraktion: 
+    Auslesen von Tabellenfeldern in HTML-Dateien mithilfe eines Python-Skripts
+
+Moegliche Fehlerquellen: 
+    - Menschliches Versagen bei der Entscheidungssuche
+    - Technische Fehler in der BGH-Entscheidungsdatenbank
+    - Programmierfehler im Python-Skript
+
+
+BGH juris
+---------
+
+Rohdaten:  Sammel-PDF-Dateien aus juris-Suchen
+
+Abdeckung: Einrichtung des XI. Zivilsenats 1988 - Ende 2015
+
+Vorgehen zur Aktenzeichenextraktion:
+    1. Konvertierung der Sammel-PDF-Dateien in Sammel-TXT-Dateien
+    2. Zerschneiden der Sammel-TXT-Dateien in Einzel-TXT-Dateien
+    3. Auslesen der Aktenzeichen aus den Einzel-TXT-Dateien mithilfe eines Python-Skripts
+
+Moegliche Fehlerquellen: 
+    - Falsche Aktenzeichenangaben Koepfen der juris-Dokumente
+    - Programmierfehler im Python-Skript

@@ -1,0 +1,14 @@
+Abbildung 2
+-----------
+
+Hierbei handelt es sich um einen Screenshot der ersten Code-Zelle in 'search_db.ipynb',
+den wir fuer die Zwecke des Aufsatzes mit Erlaeuterungen versehen haben.
+Der zur Suche verwendete regulaere Ausdruck erfasst auch bis zu 20 Zeichen vor und nach dem
+jeweiligen Treffer. 
+Diese Informationen werden in der hier bereitgestellten Suchfunktion nicht verwendet, 
+koennen aber nutzbar gemacht werden, indem man den Funktionskopf um ein Argument 'verbose'
+ergaenzt und innerhalb der Funktion eine entsprechende Fallunterscheidung vorsieht,
+mit der dann wahlweise die Trefferzahlen (falls verbose den Wert False hat) 
+oder die Treffer selbst (falls verbose den Wert True hat) zurueckgegeben werden koennen.
+Eine so modifizierte Funktion ermoeglicht einen schnellen Ueberblick ueber die Kontexte, 
+in denen der regulaere Ausdruck vorkommt, nach dem gesucht wird.

@@ -1,0 +1,14 @@
+Abbildung 1
+-----------
+
+Die Zahlen, auf denen Abbildung 1 basiert, haben wir mithilfe von 'prepare_venn.ipynb' ermittelt 
+und dann zur Visualisierung in das Programm eulerAPE eingegeben.
+Die vom Programm produzierte 'rohe' Abbildung haben wir annotiert.
+Die Datei 'prepare_venn.ipynb' verwendet die Dateien 'bgh_internet_aktenzeichen.txt', 
+'bgh_juris_aktenzeichen.txt' und 'bgh_versand_aktenzeichen.txt', die wir im Rahmen der 
+Datenaufbereitung auf Grundlage der uns jeweils vorliegenden Daten erzeugt haben
+(zu den damit verbundenen Unsicherheiten siehe 'datengrundlage.txt').
+Die Schnittmengen haben wir ausschliesslich anhand der Uebereinstimmung im Aktenzeichen ermittelt. 
+Dabei haben wir insbesondere nicht zwischen mehreren aus einer Quelle zu demselben Aktenzeichen 
+vorliegenden Entscheidungen differenziert, da diese Differenzierung nur anhand der Volltexte 
+aller Entscheidungen aus allen drei Quellen moeglich gewesen waere.

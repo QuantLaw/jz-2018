@@ -1,0 +1,10 @@
+Abbildung 3
+-----------
+
+Abbildung 3 basiert auf 'search_db.ipynb' und setzt eine Datenbank mit dem Schema der in 
+'create_db.ipynb' erzeugten Datenbank voraus. 
+Diese Datenbank kann aus jeder entsprechend strukturierten Sammlung von Entscheidungen des 
+XI. Zivilsenats erstellt werden. 
+Wir haben hierfuer wegen der in 'datengrundlage.txt' geschilderten Probleme bei der Umwandlung
+der aelteren Dateien aus der Quelle 'BGH Versand' und der geringen Abdeckung der Quelle 
+'BGH Internet' auf die Quelle 'BGH juris' zurueckgegriffen.
