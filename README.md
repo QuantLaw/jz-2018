@@ -2,7 +2,10 @@
 
 In diesem Online-Anhang sind weitere Informationen zu den im Aufsatz geschilderten Analysen 
 und den ihnen zugrundeliegenden Daten zusammengestellt.
-Das hier zum Download bereitgestellte Archiv hat folgende Struktur:
+
+Das Zip-Archiv kann hier heruntergeladen werden: [Download des Zip-Archivs](https://github.com/QuantLaw/jz-2018/zipball/master)
+
+Es hat folgende Struktur:
 
 * `data`
   - `bgh_juris_trefferzahlen.csv` und `bgh_statistik_erledigungen.csv` als Grundlage der im
