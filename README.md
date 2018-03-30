@@ -2,6 +2,8 @@
 
 **DOI (Aufsatz): 10.1628/jz-2018-0020**
 
+**DOI (Anhang):  10.5281/zenodo.1210102**
+
 In diesem Online-Anhang sind weitere Informationen zu den im Aufsatz geschilderten Analysen 
 und den ihnen zugrundeliegenden Daten zusammengestellt.
 
