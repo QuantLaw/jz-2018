@@ -1,5 +1,7 @@
 ## JZ 2018
 
+###### DOI (Aufsatz): 10.1628/jz-2018-0020
+
 In diesem Online-Anhang sind weitere Informationen zu den im Aufsatz geschilderten Analysen 
 und den ihnen zugrundeliegenden Daten zusammengestellt.
 
